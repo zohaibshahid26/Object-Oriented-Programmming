@@ -206,12 +206,22 @@ int main()
 			cin >> f;
 			cin.ignore();
 			cin >> in;
+			if(in>=12)
+			{
+			f += i / 12;
+			i = i % 12;
+		         }
 			length[i].setFeet(f);
 			length[i].setInches(in);
 			cout << "Enter the width of the room " << i + 1 << "in feet and inche s " << endl;
 			cin >> f;
 			cin.ignore();
 			cin >> in;
+			if(in>=12)
+			{
+			f += i / 12;
+			i = i % 12;
+		         }
 			width[i].setFeet(f);
 			width[i].setInches(in);
 			rd[i].setRoom(length[i], width[i]);
